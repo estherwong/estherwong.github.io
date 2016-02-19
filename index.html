@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang = "en">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> Fortune Bakery </title>
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"  />
+	<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"  />
+	<link href="css/styles.css" rel="stylesheet" type="text/css"  />
+	<link href="slick/slick.css" rel="stylesheet" type="text/css"/>
+	<link href="slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div id="logo">
+				<img id="logopic" src="img/banner.jpg" alt="fortune bakery logo" />
+			</div>
+		</header>
+		<div>
+			<nav id="nav">
+				<ul id="menu">
+					<li><a href="index.html" title="HOME">HOME</a></li>
+
+					<li><a href="about.html" title="ABOUT">ABOUT</a></li>
+
+					<li><a href="gallery.html" title="GALLERY" >GALLERY</a></li>
+
+					<li><a href="contact.html" title="CONTACT" >CONTACT</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<div id= "slideshow">
+			<div class="slider">
+				<div><img class = "slider-pic" src="img/exterior.jpg"/></div>
+				<div><img class = "slider-pic" src="tempimg/inside.jpg"/></div>
+				<div><img class = "slider-pic" src="tempimg/fbnight.jpg"/></div>
+			</div>
+			<br> 
+			<br>
+			<br>
+		</div>
+			
+		<div id = "boxes">
+			<div class="box"><img class="boxicon" alt="Staff Faves" src="img/weddings.jpg"></div>
+			<div class="box"><img class="boxicon" alt="Weddings" src="img/customorders.jpg"></div>
+			<div class="box"><img class="boxicon" alt="Read the Blog" src="img/cupcakes.jpg"></div>
+		</div>
+
+		<div style = "clear:both"> </div>
+		
+		<div>
+			<hr class="styled" />
+		</div>
+
+		<div id = "bottom">
+			<div id="map" class="bottom-section">	
+			</div>
+			<div id="bottom-info" class="bottom-section">
+				<p> Phone:  </p>
+				<br>
+				<p> (626) 576-0514 </p>
+				<br>
+
+				<p> Address: </p>
+				<br>
+				<p>700 W. Las Tunas Dr. </p>
+				<p>San Gabriel, CA 91776</p>
+			</div>
+	    </div>
+
+
+	</div>
+
+	<footer>
+	  <p> Copyright 2016 © Fortune Bakery. All rights reserved. </p>
+	</footer>
+
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script>
+	  function initMap() {
+  	    var mapDiv = document.getElementById('map');
+  	    var myLatLng = {lat: 34.104549, lng: -118.109641};
+
+	  	var map = new google.maps.Map(mapDiv, {
+	      center: myLatLng,
+	      zoom: 15
+	    });
+
+	    var marker = new google.maps.Marker({
+	    	position: myLatLng,
+	    	map: map,
+	    	title: 'Fortune Bakery is Here!'
+	    });
+	  }
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+</body>
+
+</html>

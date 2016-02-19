@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang = "en">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> Fortune Bakery </title>
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"  />
+	<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"  />
+	<link href="css/styles.css" rel="stylesheet" type="text/css"  />
+	<link href="slick/slick.css" rel="stylesheet" type="text/css"/>
+	<link href="slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div id="logo">
+				<img src="img/fortunebakeryfront.png" alt="fortune bakery logo" />
+			</div>
+		</header>
+		<div>
+			<nav id="nav">
+				<ul id="menu">
+					<li><a href="index.html" title="HOME">HOME</a></li>
+
+					<li><a href="about.html" title="ABOUT">ABOUT</a></li>
+
+					<li><a href="gallery.html" title="GALLERY" >GALLERY</a></li>
+
+					<li><a href="contact.html" title="CONTACT" >CONTACT</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+	
+        <div class="row">
+            <div id="contact-map" class="col-lg-12">
+            </div>
+            <div class="col-lg-12" style="height: 100px">
+            </div>
+            <div class="contact col-lg-6">
+				<img id="contact-img" src="tempimg/roses.jpg"/>
+            </div>
+            <div class="contact col-lg-6">
+                <p class="contact-info"> 
+	                <strong> Address: </strong> <br/>
+	                700 W Las Tunas Dr. <br/>
+	                San Gabriel, CA 91776
+                </p>
+
+                <p class="contact-info"> 
+                	<strong> Phone: </strong> <br/>
+                   (626) 576-0514
+                </p>
+
+                <p class="contact-info"> 
+	                <strong> Hours: </strong> <br/>
+	                Mon &nbsp;  7:00 am - 7:00 pm   <br/>
+	                Tue &nbsp;&nbsp; 7:00 am - 7:00 pm   <br/>
+	                Wed &nbsp; 7:00 am - 7:00 pm   <br/>
+	                Thu &nbsp;&nbsp; 7:00 am - 7:00 pm   <br/>
+	                Fri &nbsp;&nbsp;&nbsp;&nbsp; 7:00 am - 7:00 pm   <br/>
+	                Sat &nbsp;&nbsp;&nbsp; 7:00 am - 7:00 pm   <br/>
+	                Sun &nbsp;&nbsp; 8:00 am - 1:00 pm   <br/>
+                 </p>
+            </div>    
+		</div>
+	</div>
+	
+	<footer>
+	  <p> Copyright 2016 © Fortune Bakery. All rights reserved. </p>
+	</footer>
+
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script>
+	  function initMap() {
+  	    var mapDiv = document.getElementById('contact-map');
+  	    var myLatLng = {lat: 34.104549, lng: -118.109641};
+
+	  	var map = new google.maps.Map(mapDiv, {
+	      center: myLatLng,
+	      zoom: 15
+	    });
+
+	    var marker = new google.maps.Marker({
+	    	position: myLatLng,
+	    	map: map,
+	    	title: 'Fortune Bakery is Here!'
+	    });
+	  }
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+</body>
+
+</html>

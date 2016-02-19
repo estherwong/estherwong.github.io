@@ -1,0 +1,262 @@
+/******************************************************************
+Fortune Bakery Stylesheet
+******************************************************************/
+/* Table of Content
+================================================== 
+  #HOME
+  #ABOUT
+  #GALLERY
+  #CONTACT
+
+/* #reset
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+body {
+    line-height: 1; }
+ol, ul {
+    list-style: none; }
+blockquote, q {
+    quotes: none; }
+blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none; }
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+
+/***************************************************
+                    HOME
+****************************************************/
+/* #center
+================================================== */  
+body {
+  text-align: center;
+  background-color: #ffffff;
+ }
+.container {
+  width: 1000px;
+}
+/* #logo
+================================================== */  
+#logo {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#logopic {
+
+}
+/* #navbar
+================================================== */  
+#nav {
+    display: block;
+    text-align: center;
+
+    border-top: 1px none #d5d1b8;
+    border-bottom: 1px none #d5d1b8;
+
+    min-height: 35px;
+    padding: 10px 0 0;
+    margin-top:15px;
+    margin-bottom: 35px;
+}
+#nav ul {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+#nav ul li {
+    display: inline-block;
+    border-color: #d5d1b8;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 1px solid #d5d1b8;
+    padding: 0 20px 0;
+    position: relative;
+    margin: 0;
+}
+#nav ul li {
+  *display: inline;
+}
+#nav ul li a, #nav ul li a:visited, #nav ul li a:active {
+    font-family: "Roboto";     
+    font-size: 14px; 
+    text-transform: none;
+    color: #808184;
+    position: relative;
+    display:block;
+    padding: 7px;
+    letter-spacing: 2px;
+}
+#nav ul li a.active, nav ul li a.active:visited, nav ul li a.active:active {
+  color: #808184;
+}
+#nav ul li:first-child {
+    padding-left: 0;
+}
+#nav ul li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+#nav ul li a:hover, nav ul li a:focus {
+    color: #ff99a7;
+}
+#nav ul li.current_page_item a {
+    color: #ff99a7;
+}
+#nav ul li.current_page_ancestor a {
+    color: #ff99a7;
+}
+
+/* #slider
+================================================== */  
+.slider {
+    height: 400px;
+    width: 900px;
+}
+.slider-pic {
+    height: 400px;
+    width: 900px;
+}
+#slideshow {
+    width:900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* #boxes
+================================================== */ 
+#boxes {
+    width:930px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.boxicon {
+    width: 300px;
+    height: 300px;
+}
+.box { 
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+    margin-right: 10px;
+    float:left;
+}
+/* #hr
+================================================== */  
+hr.styled {
+    margin: 50px 0 50px 0;
+    border-style: solid;
+    border-color: #F7E56A;
+    border-width: 2px 0 0 0;
+}
+
+/* #bottom
+================================================== */  
+#bottom {
+    width: 820px;
+    height:275px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+.bottom-section {
+    width: 380px;
+    height: 250px;
+    float: left;
+    margin-left:30px;
+    margin-top:10px;
+}
+#bottom-info {
+    top: 200px;
+    font-size: 20px;
+    font-family:"Roboto";
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color: white;
+    text-align: left;
+}
+#map {
+    background-color: #CCC;
+}
+
+/* #bottom
+================================================== */  
+footer {
+    background-color: ;
+    margin-top: 100px;
+    height: 50px;
+    padding: 20px;
+    font-size: 15px;
+    text-align: left;    
+}
+
+/***************************************************
+                    ABOUT
+****************************************************/
+#about {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.about-section1 {
+    float: left;
+    height: 500px;
+    width: 340px;
+    margin-right: 20px;
+}
+
+.about-section2 {
+    float: left;
+    height: 500px;
+    width: 400px;
+    margin-left: 10px;
+}
+.about-img {
+    height:100%;
+    width:100%;
+}
+/***************************************************
+                    GALLERY
+****************************************************/
+.thumb {
+    margin-bottom: 30px;
+    height: 150px;
+    overflow: hidden;
+}
+/***************************************************
+                    CONTACT
+****************************************************/
+#contact-map {
+    height: 500px;
+    width: 1000px;
+}
+.contact {
+    width:500px;
+    height:400px;
+}
+#contact-img {
+    width: 100%;
+    height: 100%;
+}
+.contact-info{
+    color: black;
+    font-size: 1.5em;
+    font-family: Lora;
+    margin: 20px;
+}
+
+
+
