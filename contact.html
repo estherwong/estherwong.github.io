@@ -18,46 +18,53 @@
 	<div class="container">
 		<header>
 			<div id="logo">
-				<img src="img/fortunebakeryfront.png" alt="fortune bakery logo" />
+				<img src="img/framedbanner.jpg" alt="fortune bakery logo" />
 			</div>
 		</header>
 		<div>
-			<nav id="nav">
-				<ul id="menu">
-					<li><a href="index.html" title="HOME">HOME</a></li>
+			<hr class="styled" />
+		</div>		
+			<div>
+				<nav id="nav">
+					<ul id="menu">
+						<li><a href="index.html" title="HOME">HOME</a></li>
 
-					<li><a href="about.html" title="ABOUT">ABOUT</a></li>
+						<li><a href="about.html" title="ABOUT">ABOUT</a></li>
 
-					<li><a href="gallery.html" title="GALLERY" >GALLERY</a></li>
+						<li><a href="gallery.html" title="GALLERY" >GALLERY</a></li>
 
-					<li><a href="contact.html" title="CONTACT" >CONTACT</a></li>
-				</ul>
-			</nav>
+						<li><a href="contact.html" title="CONTACT" >CONTACT</a></li>
+					</ul>
+				</nav>
 
+			</div>
+		<div>
+			<hr class="styled" />
 		</div>
 
 	
-        <div class="row">
+        <div class="row content-spacing-top">
             <div id="contact-map" class="col-lg-12">
             </div>
             <div class="col-lg-12" style="height: 100px">
             </div>
             <div class="contact col-lg-6">
-				<img id="contact-img" src="tempimg/roses.jpg"/>
+				<img id="contact-img" src="tempimg/actualsign.jpg"/>
             </div>
             <div class="contact col-lg-6">
-                <p class="contact-info"> 
+            	<div class="content-spacing">
+                <p class="contact-info content-font"> 
 	                <strong> Address: </strong> <br/>
 	                700 W Las Tunas Dr. <br/>
 	                San Gabriel, CA 91776
                 </p>
 
-                <p class="contact-info"> 
+                <p class="contact-info content-font"> 
                 	<strong> Phone: </strong> <br/>
                    (626) 576-0514
                 </p>
 
-                <p class="contact-info"> 
+                <p class="contact-info content-font"> 
 	                <strong> Hours: </strong> <br/>
 	                Mon &nbsp;  7:00 am - 7:00 pm   <br/>
 	                Tue &nbsp;&nbsp; 7:00 am - 7:00 pm   <br/>
@@ -67,12 +74,13 @@
 	                Sat &nbsp;&nbsp;&nbsp; 7:00 am - 7:00 pm   <br/>
 	                Sun &nbsp;&nbsp; 8:00 am - 1:00 pm   <br/>
                  </p>
+             	</div>
             </div>    
 		</div>
 	</div>
 	
 	<footer>
-	  <p> Copyright 2016 © Fortune Bakery. All rights reserved. </p>
+	  <p class="content-font"> Copyright 2016 © Fortune Bakery. All rights reserved. </p>
 	</footer>
 
 
@@ -88,8 +96,9 @@
 
 	  	var map = new google.maps.Map(mapDiv, {
 	      center: myLatLng,
-	      zoom: 15
-	    });
+	      zoom: 15,
+	      scrollwheel: false
+	    });	
 
 	    var marker = new google.maps.Marker({
 	    	position: myLatLng,

@@ -68,7 +68,7 @@
 		<div id = "bottom">
 			<div id="map" class="bottom-section">	
 			</div>
-			<div id="bottom-info" class="bottom-section">
+			<div id="bottom-info" class="bottom-section content-font content-spacing">
 				<p> Phone:  </p>
 				<br>
 				<p> (626) 576-0514 </p>
@@ -85,7 +85,7 @@
 	</div>
 
 	<footer>
-	  <p> Copyright 2016 © Fortune Bakery. All rights reserved. </p>
+	  <p class="content-font"> Copyright 2016 © Fortune Bakery. All rights reserved. </p>
 	</footer>
 
 
@@ -101,7 +101,8 @@
 
 	  	var map = new google.maps.Map(mapDiv, {
 	      center: myLatLng,
-	      zoom: 15
+	      zoom: 15,
+	      scrollwheel: false
 	    });
 
 	    var marker = new google.maps.Marker({
